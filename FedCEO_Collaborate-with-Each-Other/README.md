@@ -1,15 +1,6 @@
 # FedCEO:"Clients Collaborate: Flexible Differentially Private Federated Learning with Guaranteed Improvement of Utility-Privacy Trade-off" 
 
-<ml heart paper weekly gzh>
-
-<mit tech>
-
-> 📣 17/12/25: Honored to have our work featured by [PaperWeekly](https://zhuanlan.zhihu.com/paperweekly) [[博客](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247712832&idx=2&sn=6d35c7d8fca09214367ca2b63f99bfd4&chksm=975656b330afd9317064c6ea068543b42436aec686d2dbeb2c322fe7fd8044746b638f8c2d8c&mpshare=1&scene=24&srcid=1122sjo91pjKnm1C5zeNE9PR&sharer_shareinfo=dd55ea0fd95260f0f70261dc41dd6818&sharer_shareinfo_first=dd55ea0fd95260f0f70261dc41dd6818#rd)] and [Data Science Collective](https://medium.com/data-science-collective) [[Blog](https://medium.com/data-science-collective/icml-2025-the-art-of-balance-in-federated-learning-the-fedceo-framework-cracks-the-dilemma-of-326c9d8bd5fe)]！
-
-> 📣 01/05/25: This paper has been accepted to **ICML 2025**!
-
 The implementation of our paper:
-
 [Clients Collaborate: Flexible Differentially Private Federated Learning with Guaranteed Improvement of Utility-Privacy Trade-off](https://arxiv.org/pdf/2402.07002) (**FedCEO**)
 
  
@@ -105,16 +96,6 @@ We compare FedCEO with baseline methods under different privacy settings (contro
 nohup python -u FedCEO.py --privacy True --noise_multiplier 2.0 --flag True --dataset "cifar10" --model "cnn" --lamb 0.6 --r 1.04 --interval 10 > ./logs/log_fedceo_noise=2.0_cifar10_LeNet.log 2>&1 &
 ```
 
----
-
-### 2. Privacy Experiments
-
-We use the **DLG attack** to evaluate privacy leakage. Lower PSNR indicates better privacy protection.
-
-#### Figure: Privacy Attack Results on CIFAR-10 (PSNR in dB, lower is better)
-
-<img width="482" height="345" alt="image" src="https://github.com/user-attachments/assets/5075a67e-272d-425f-899f-1d0c3937ff5b" />
-
 #### Command to Run Privacy Experiment:
 ```bash
 # privacy exps
@@ -128,18 +109,6 @@ We visualize the trade-off between utility (test accuracy) and privacy (ε_p) on
 
 <img width="402" height="352" alt="image" src="https://github.com/user-attachments/assets/9f1d1411-14ea-4765-852c-81abddbaeda8" />
 
-## Citation  
-
-```BibTex
-@inproceedings{
-li2025clients,
-title={Clients Collaborate: Flexible Differentially Private Federated Learning with Guaranteed Improvement of Utility-Privacy Trade-off},
-author={Yuecheng Li and Lele Fu and Tong Wang and Jian Lou and Bin Chen and Lei Yang and Jian Shen and Zibin Zheng and Chuan Chen},
-booktitle={Forty-second International Conference on Machine Learning},
-year={2025},
-url={https://openreview.net/forum?id=C7dmhyTDrx}
-}
-```
 
 
 
