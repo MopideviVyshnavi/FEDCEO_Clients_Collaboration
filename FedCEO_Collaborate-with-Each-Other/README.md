@@ -2,15 +2,6 @@
 
 The implementation of our paper:
 [Clients Collaborate: Flexible Differentially Private Federated Learning with Guaranteed Improvement of Utility-Privacy Trade-off](https://arxiv.org/pdf/2402.07002) (**FedCEO**)
-
- 
-[[ArXiv](https://arxiv.org/abs/2402.07002)] [[OpenReview](https://openreview.net/forum?id=C7dmhyTDrx&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICML.cc%2F2025%2FConference%2FAuthors%23your-submissions))] [[Slide&Video](https://icml.cc/virtual/2025/poster/46080)] [[X](https://x.com/Yuecheng_Lee/status/1964308641055723827)] [[中文博客](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247712832&idx=2&sn=6d35c7d8fca09214367ca2b63f99bfd4&chksm=975656b330afd9317064c6ea068543b42436aec686d2dbeb2c322fe7fd8044746b638f8c2d8c&mpshare=1&scene=24&srcid=1122sjo91pjKnm1C5zeNE9PR&sharer_shareinfo=dd55ea0fd95260f0f70261dc41dd6818&sharer_shareinfo_first=dd55ea0fd95260f0f70261dc41dd6818#rd)] [[Blog](https://medium.com/data-science-collective/icml-2025-the-art-of-balance-in-federated-learning-the-fedceo-framework-cracks-the-dilemma-of-326c9d8bd5fe)]
-
-<div align="center">
-  <img width="800" height="388" alt="Cover_github" src="C:\Users\M VYSHNAVI\Downloads\ChatGPT Image Feb 6, 2026, 11_19_25 AM.png"
-  />
-</div>
-
 ## Abstract
 
 To defend against privacy leakage of user data, differential privacy is widely used in federated learning, but it is not free. The addition of noise randomly disrupts the semantic integrity of the model and this disturbance accumulates with increased communication rounds. In this paper, we introduce a novel federated learning framework with rigorous privacy guarantees, named **FedCEO**, designed to strike a trade-off between model utility and user privacy by letting clients "*Collaborate with Each Other*". Specifically, we perform efficient tensor low-rank proximal optimization on stacked local model parameters at the server, demonstrating its capability to *flexibly* truncate high-frequency components in spectral space. This capability implies that our FedCEO can effectively recover the disrupted semantic information by smoothing the global semantic space for different privacy settings and continuous training processes. Moreover, we improve the SOTA utility-privacy trade-off bound by order of `\sqrt{d}`, where `d` is the input dimension. We illustrate our theoretical results with experiments on datasets and observe significant performance improvements and strict privacy guarantees under different privacy settings. 
